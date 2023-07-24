@@ -1,0 +1,59 @@
+
+* {
+    font-family: monospace, 'Lucida Sans';
+    text-align: left;
+}
+body {
+    background-image: radial-gradient(#212121 4%, transparent 1%);
+    background-color: floralwhite;
+    background-size: 25px 25px;
+    margin: 0 20px;
+    font-size: 1.2rem;
+  }
+
+/* header */
+h1{
+    margin-top: 5%;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.english-name {
+    font-style: italic;
+    font-size: 0.8rem;
+    margin-top: -1.5rem;
+    opacity: 0;
+}
+
+#hanny {
+    font-style: normal;
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+.english-name:hover {
+    opacity: 1;
+}
+
+/* main */
+h2 {
+    text-indent: 20px;
+}
+
+h3{
+    text-indent: 40px;
+}
+
+.sub-h3{
+    text-indent: 60px;
+    margin-left: 40px;
+}
+
+a:visited {
+    color: grey;
+}
+
+.quote {
+    font-style: italic;
+}

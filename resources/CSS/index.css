@@ -7,13 +7,20 @@ body {
     background-image: radial-gradient(#212121 4%, transparent 1%);
     background-color: floralwhite;
     background-size: 25px 25px;
-    margin: 0 20px;
+    margin: 0 30px;
     font-size: 1.2rem;
   }
 
 /* header */
+header {
+    display: grid;
+    grid-template: repeat(4 1fr) / repeat(6 1fr);
+}
+
 h1{
-    margin-top: 5%;
+    grid-column: 0/ span 3;
+    grid-row: 0/ span 2;
+    /* margin-top: 3%; */
     font-size: 3rem;
     text-align: left;
 }
@@ -21,20 +28,37 @@ h1{
 .english-name {
     font-style: italic;
     font-size: 0.8rem;
-    margin-top: -1.5rem;
-    opacity: 0;
+    grid-row: 2/ span 1;
+    grid-column: 0/ span 2;
+    /* margin-top: -1.5rem; */
+    background-color: #21212180;
+    padding: 5px 15px;
+    border-radius: 20px;
+    /* width: 35%; */
 }
+nav {
+    grid-row: 1 / span 1;
+    grid-column: 6 /span 1;
+    margin-top: 20px ;
+}
+
+header nav li {
+    display: inline;
+    padding: 1rem;
+    color: #212121;
+
+}
+
 
 #hanny {
     font-style: normal;
     text-decoration: underline;
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: bolder;
 }
 
-.english-name:hover {
-    opacity: 1;
-}
+
+
 
 /* main */
 h2 {
@@ -46,7 +70,7 @@ h3{
 }
 
 .sub-h3{
-    text-indent: 60px;
+    /* text-indent: 60px; */
     margin-left: 40px;
 }
 
@@ -56,4 +80,19 @@ a:visited {
 
 .quote {
     font-style: italic;
+}
+
+img {
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin-left: 15px;
+}
+
+.about .sub-h3 {
+ text-align: justify;
+}
+
+.random {
+    text-indent: 40px;
 }
